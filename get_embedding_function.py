@@ -1,10 +1,5 @@
 from langchain_community.embeddings.ollama import OllamaEmbeddings
-from langchain_community.embeddings.bedrock import BedrockEmbeddings  #importing AWS bedrock embeddings
 
-
-def get_embedding_function(): #adding embedding funtion 
-    embeddings = BedrockEmbeddings(
-        credentials_profile_name="default", region_name="us-east-1"
-    )
-    # embeddings = OllamaEmbeddings(model="nomic-embed-text")
-    return embeddings
+def get_embedding_function():
+    # You can replace the model with any local Ollama embedding model
+    return OllamaEmbeddings(model="nomic-embed-text")

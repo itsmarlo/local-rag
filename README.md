@@ -2,7 +2,7 @@ Here is the full **README.md** ready to copy and paste.
 
 ---
 
-# local-rag
+# 𝗹𝗼𝗰𝗮𝗹-𝗿𝗮𝗴-𝗸𝗻𝗼𝘄𝗹𝗲𝗱𝗴𝗲-𝘀𝗲𝗮𝗿𝗰𝗵
 
 A fully local Retrieval Augmented Generation system that runs offline using Ollama, ChromaDB, and LangChain.
 The project indexes your PDFs, embeds them with a local model, and answers questions using a local LLM.

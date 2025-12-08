@@ -178,13 +178,15 @@ local-rag/
 ## Example
 
 ```bash
-python query_data.py "What are the rules of Ticket to Ride?"
+python query_data.py "How does ConTextTab integrate semantic information into tabular data?"
+
 ```
 
 Example response:
 
 ```
-Based on your documents, Ticket to Ride is a board game where...
+Possible Response (grounded in the paper):
+ConTextTab integrates semantic information by using data type specific embeddings for every cell in a table. Text values and categorical entries are encoded with a pretrained text embedding model, which preserves the meaning of labels and free text. Date values are embedded by separately encoding the day, month, and year, then combining them into a single vector. Numerical values are normalized and mapped through a learnable transformation. Column headers are also embedded with the same text encoder and added to the corresponding cell embeddings. This allows the model to access semantic information from both feature values and column names while remaining equivariant to row and column order. These combined embeddings are then processed through alternating cross column and cross row attention layers.
 ```
 
 
